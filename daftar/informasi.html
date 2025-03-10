@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Berita SD Harapan Bangsa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+/* style internal untuk halaman informasi pendaftaran*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* BODY: Warna latar belakang abu-abu muda dan teks warna gelap */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER: Latar belakang biru, teks putih, dan padding */
+header {
+    background:  #2c7ef8;
+    color: white;
+    padding: 15px 0;
+}
+
+/* CONTAINER: Mengatur lebar maksimal dan tata letak fleksibel */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO: Menyesuaikan ukuran gambar logo */
+.logo {
+    width: 80px;
+    border-radius: 60px;
+}
+
+/* NAVIGASI: Menggunakan flexbox untuk membuat menu horizontal */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* NAVIGASI LIST: Menata tampilan menu */
+nav ul li {
+    display: inline;
+}
+
+/* NAVIGASI LINK: Teks putih, padding, dan efek hover */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* EFEK HOVER: Warna latar berubah menjadi oranye dengan sudut membulat */
+nav ul li a:hover {
+    background: #ffaa01a4;
+    border-radius: 5px;
+}
+
+/* SECTION PENDAFTARAN: Latar belakang putih dan teks di tengah */
+.pendaftaran-sekolah {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* CONTAINER PENDAFTARAN: Mengatur tata letak informasi dengan flexbox */
+.pendaftaran-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* KOTAK INFORMASI PENDAFTARAN: Latar putih, bayangan, efek hover */
+.pendaftaran-info {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 280px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* EFEK HOVER PADA KOTAK PENDAFTARAN: Mengangkat sedikit saat di-hover */
+.pendaftaran-info:hover {
+    transform: translateY(-5px);
+}
+
+/* JUDUL INFORMASI PENDAFTARAN: Warna biru */
+.pendaftaran-info h3 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+/* LIST INFORMASI: Mengatur tampilan list agar rata kiri */
+.pendaftaran-info ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* SECTION CALL TO ACTION: Latar oranye dan teks putih */
+.call-to-action {
+    background: #ff9900;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* TOMBOL CTA: Warna putih dengan teks oranye dan efek hover */
+.call-to-action .cta {
+    background: white;
+    color: #ff9900;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* EFEK HOVER CTA: Warna berubah menjadi biru dengan teks putih */
+.call-to-action .cta:hover {
+    background: #1076db;
+    color: white;
+}
+
+/* FOOTER: Latar biru, teks putih, dan padding */
+footer {
+    background:  #2c7ef8;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* SOCIAL ICONS: Menambahkan margin atas pada ikon sosial */
+.social-icons {
+    margin-top: 15px;
+}
+
+/* IKON MEDIA SOSIAL: Ukuran besar dan efek hover */
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+/* EFEK HOVER MEDIA SOSIAL: Warna berubah menjadi oranye */
+.social-icons a:hover {
+    color: #353535;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* UNTUK LAYAR KECIL: Tata letak berubah menjadi vertikal */
+@media (max-width: 768px) {
+    .pendaftaran-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pendaftaran-info {
+        width: 90%;
+    }
+
+    /* MENU NAVIGASI BERUBAH MENJADI TATA LETAK VERTIKAL */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="../assets/img/logo-school.webp" alt="Logo Sekolah" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="../tentang.html">Tentang Kami</a></li>
+                    <li><a href="../program.html">Program & Kurikulum</a></li>
+                    <li><a href="../berita.html">Berita</a></li>
+                    <li><a href="../galeri.html">Galeri</a></li>
+                    <li><a href="../kontak.html">Kontak</a></li>
+                    <li><a href="../daftar/informasi.html" class="cta">Informasi Pendaftaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="pendaftaran-sekolah">
+        <h2>Informasi Pendaftaran Siswa Baru</h2>
+        <p>SD Harapan Bangsa membuka pendaftaran siswa baru untuk tahun ajaran 2025/2026. Berikut adalah informasi lengkap mengenai proses pendaftaran:</p>
+
+        <div class="pendaftaran-container">
+            <div class="pendaftaran-info">
+                <h3>Persyaratan Pendaftaran</h3>
+                <ul>
+                    <li>Calon siswa berusia minimal 6 tahun per 1 Juli 2025.</li>
+                    <li>Mengisi formulir pendaftaran secara lengkap.</li>
+                    <li>Melampirkan fotokopi Akta Kelahiran dan Kartu Keluarga.</li>
+                    <li>Melampirkan pas foto terbaru ukuran 3x4 (2 lembar).</li>
+                    <li>Melampirkan fotokopi Kartu Identitas Orang Tua/Wali.</li>
+                    <li>Melampirkan fotokopi ijazah TK (jika ada).</li>
+                </ul>
+            </div>
+
+            <div class="pendaftaran-info">
+                <h3>Jadwal Pendaftaran</h3>
+                <ul>
+                    <li><strong>Pendaftaran Dibuka:</strong> 1 April - 30 Juni 2025</li>
+                    <li><strong>Seleksi & Wawancara:</strong> 5 - 10 Juli 2025</li>
+                    <li><strong>Pengumuman Hasil:</strong> 15 Juli 2025</li>
+                    <li><strong>Daftar Ulang:</strong> 16 - 20 Juli 2025</li>
+                    <li><strong>Mulai Tahun Ajaran Baru:</strong> 22 Juli 2025</li>
+                </ul>
+            </div>
+
+            <div class="pendaftaran-info">
+                <h3>Biaya Pendaftaran</h3>
+                <p>Biaya pendaftaran untuk siswa baru adalah Rp 250.000,- yang dapat dibayarkan melalui transfer bank atau langsung di sekolah.</p>
+                <p><strong>Rekening Pembayaran:</strong></p>
+                <p>Bank ABC - 1234567890 a.n. SD Harapan Bangsa</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h3>Jadilah Bagian Dari Kami!</h3>
+        <a href="../daftar/index.html" class="cta">Daftar Sekarang</a>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 SD Harapan Bangsa. Dikembangkan Oleh Deni Wenda.</p>
+        <h4 class="social-icons">Media Soial Kami:</h4><br>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

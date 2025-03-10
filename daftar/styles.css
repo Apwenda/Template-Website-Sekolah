@@ -1,0 +1,195 @@
+/* ====== Styling Utama Halaman ====== */
+html, body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #42a5f5, #478ed1);
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto; /* Memastikan halaman bisa di-scroll */
+}
+
+/* ====== Container Utama ====== */
+.pendaftaran-sekolah {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* ====== Layout Kontainer Informasi & Formulir ====== */
+.pendaftaran-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Mencegah elemen naik ke tengah */
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ====== Styling Box Informasi Pendaftaran ====== */
+.pendaftaran-info {
+    background: #ffffff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    opacity: 1; /* Pastikan opacity penuh */
+}
+
+.pendaftaran-info h3 {
+    margin-bottom: 10px;
+    color: #222; /* Warna judul lebih gelap */
+}
+
+.pendaftaran-info ul {
+    padding-left: 20px;
+}
+
+.pendaftaran-info ul li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* ====== Styling Formulir Pendaftaran ====== */
+.pendaftaran-form {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto; /* Memastikan tetap di tengah */
+}
+
+.pendaftaran-form h3 {
+    color: #222; /* Warna judul lebih gelap */
+}
+
+/* ====== Styling Input dan Label Formulir ====== */
+.pendaftaran-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.pendaftaran-form input, 
+.pendaftaran-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+}
+
+.pendaftaran-form input::placeholder,
+.pendaftaran-form textarea::placeholder {
+    color: #777;
+}
+
+/* ====== Styling Tombol Submit ====== */
+.pendaftaran-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pendaftaran-form button:hover {
+    background: #1163bb;
+}
+
+/* ====== Styling Form, Konfirmasi, dan Status ====== */
+.container {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto; /* Memastikan tetap di tengah tanpa absolute */
+}
+
+/* ====== Styling Form Input dan Select ====== */
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ====== Styling Tombol Form ====== */
+button {
+    margin-top: 15px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+/* ====== Responsiveness: Tampilan Mobile ====== */
+@media (max-width: 768px) {
+    .pendaftaran-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pendaftaran-info, .pendaftaran-form {
+        max-width: 90%;
+    }
+}
+
+
+/* CALL TO ACTION */
+.call-to-action {
+    margin: 30px 0;
+    padding: 0px;
+    text-align: center;
+}
+
+.cta {
+    background: #ff9800;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: #e68900;
+}

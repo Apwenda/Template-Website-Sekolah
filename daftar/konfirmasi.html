@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pendaftaran</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Fungsi untuk menampilkan data dari URL
+        function tampilkanData() {
+            const params = new URLSearchParams(window.location.search);
+            document.getElementById("nama").textContent = params.get("nama") || "Tidak diisi";
+            document.getElementById("nisn").textContent = params.get("nisn") || "Tidak diisi";
+            document.getElementById("ttl").textContent = params.get("ttl") || "Tidak diisi";
+            document.getElementById("ortu").textContent = params.get("ortu") || "Tidak diisi";
+            document.getElementById("kelas").textContent = params.get("kelas") || "Tidak dipilih";
+        }
+
+        function kirimPendaftaran() {
+            alert("Pendaftaran berhasil dikirim!");
+            window.location.href = "status.html"; // Redirect ke halaman status
+        }
+    </script>
+</head>
+<body onload="tampilkanData()">
+
+    <div class="container">
+        <h1>Konfirmasi Pendaftaran</h1>
+        <p>Periksa kembali data yang telah Anda isi sebelum mengirim.</p>
+
+        <table>
+            <tr><td><strong>Nama Lengkap:</strong></td><td id="nama"></td></tr>
+            <tr><td><strong>NISN:</strong></td><td id="nisn"></td></tr>
+            <tr><td><strong>Tempat & Tanggal Lahir:</strong></td><td id="ttl"></td></tr>
+            <tr><td><strong>Nama Orang Tua/Wali:</strong></td><td id="ortu"></td></tr>
+            <tr><td><strong>Pilihan Kelas:</strong></td><td id="kelas"></td></tr>
+        </table>
+
+        <button onclick="kirimPendaftaran()">Kirimkan Pendaftaran</button>
+    </div>
+
+</body>
+</html>

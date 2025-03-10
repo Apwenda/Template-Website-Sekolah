@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Harapan Bangsa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+/* Bagian Hero: Menampilkan gambar latar belakang dengan teks di tengah */
+.hero {
+    background: url('assets/img/toga.jpeg') center/cover no-repeat; /* Gambar latar belakang dengan posisi tengah dan ukuran penuh */
+    background-color:  rgba(0, 0, 0, 0.5);;
+    color: white; /* Warna teks putih agar kontras dengan latar belakang */
+    text-align: center; /* Pusatkan teks */
+    padding: 100px 20px; /* Memberikan ruang di sekitar elemen */
+    animation: fadeIn 2s ease-in; /* Efek animasi fade-in selama 2 detik */
+}
+
+/* Gaya untuk judul utama dalam section hero */
+.hero h1 {
+    font-size: 3rem; /* Ukuran font besar agar lebih mencolok */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    color: #fff; /* Warna teks putih */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan agar teks lebih terbaca */
+}
+
+/* Animasi fadeIn: membuat elemen muncul secara perlahan */
+@keyframes fadeIn {
+    from { opacity: 0; } /* Awalnya transparan */
+    to { opacity: 1; } /* Perlahan menjadi tampak penuh */
+}
+
+/* Bagian fitur, visi-misi, dan testimoni */
+.features, .visi-misi, .testimonials {
+    text-align: center; /* Pusatkan teks */
+    padding: 50px 20px; /* Beri ruang di sekitar elemen */
+}
+
+.features:hover {
+    transform: translateY(-6px);
+}
+ 
+.feature-box:hover  {
+    transform: translate(-5px);
+}
+
+.testimonial:hover{
+    transform: translate(-5px);
+}
+
+/* Bagian Visi Misi: Latar belakang abu-abu terang */
+.visi-misi {
+    background-color: #f9f9f9; /* Warna latar belakang abu-abu terang */
+    padding: 50px 20px; /* Padding untuk memberi jarak */
+}
+
+/* Warna judul visi-misi */
+.visi-misi h2 {
+    color: #131313; /* Warna teks gelap agar kontras */
+}
+
+/* Paragraf dan daftar dalam visi-misi */
+.visi-misi p, .visi-misi ul {
+    max-width: 900px; /* Lebar maksimal agar tidak melebar terlalu besar */
+    margin: 0 auto; /* Pusatkan elemen */
+    text-align: left; /* Teks rata kiri agar mudah dibaca */
+}
+
+/* Gaya untuk kotak fitur dan testimoni */
+.feature-box, .testimonial {
+    display: inline-block; /* Agar elemen sejajar dalam satu baris */
+    width: 20%; /* Setiap elemen memiliki lebar 20% dari container */
+    background: white; /* Latar belakang putih */
+    padding: 30px; /* Padding untuk memberi jarak di dalam kotak */
+    border-radius: 10px; /* Sudut elemen dibuat melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan agar tampak lebih elegan */
+    margin: 10px; /* Beri jarak antar elemen */
+}
+
+.social-icons {    
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000000; /* Warna saat hover */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/img/logo-school.webp" alt="Logo Sekolah" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a href="program.html">Program & Kurikulum</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="daftar/informasi.html" class="cta">Informasi Pendaftaran</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="beranda" class="hero">
+        <div class="header-section">
+            <h1>SD Harapan Bangsa</h1>
+            <p>✨"Masa Depan Gemilang Dimulai di Sini!"✨</p>
+        </div>        
+    </section>
+
+    <section class="visi-misi">
+        <h2>Visi & Misi</h2><br>
+        <h3>Visi</h3><br>
+        <p>"Menjadi sekolah unggulan yang mencetak generasi berkarakter, berprestasi, dan berwawasan global dengan berlandaskan nilai-nilai kejujuran, disiplin, dan kepedulian."</p>
+        
+        <h3>Misi</h3><br>
+        <ul>
+            <li>Menyediakan pendidikan berkualitas yang membangun karakter, kreativitas, dan kecerdasan siswa.</li>
+            <li>Mengembangkan potensi akademik dan non-akademik melalui kurikulum yang inovatif dan berbasis teknologi.</li>
+            <li>Membentuk siswa yang berakhlak mulia dengan menanamkan nilai-nilai kejujuran, tanggung jawab, dan kepedulian sosial.</li>
+            <li>Menumbuhkan semangat belajar sepanjang hayat dengan pendekatan yang menyenangkan dan inspiratif.</li>
+            <li>Menciptakan lingkungan sekolah yang aman, nyaman, dan inklusif bagi seluruh siswa, guru, dan tenaga kependidikan.</li>
+            <li>Menjalin kemitraan dengan orang tua dan masyarakat dalam mendukung perkembangan dan kesuksesan siswa.</li>
+        </ul>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <h3>Pendidikan Berkualitas</h3>
+            <p>Kurikulum inovatif berbasis teknologi dan karakter.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Lingkungan Nyaman</h3>
+            <p>Suasana belajar yang aman, nyaman, dan kondusif.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Guru Profesional</h3>
+            <p>Dibimbing oleh tenaga pengajar yang kompeten.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Apa Kata Mereka?</h2><br>
+        <div class="testimonial">
+            <p>"Sekolah ini sangat luar biasa! Anak saya berkembang pesat dalam akademik maupun karakter."</p>
+            <strong>- Ibu Rina, Orang Tua Murid</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Saya bangga menjadi alumni SD Harapan Bangsa. Sekolah ini membentuk karakter saya!"</p>
+            <strong>- Andi, Alumni</strong>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h3>Jadilah Bagian Dari Kami!</h3><br>
+        <a href="daftar/index.html" class="cta">Daftar Sekarang</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SD Harapan Bangsa. Dikembangkan Oleh Deni Wenda.</p>
+        <h4 class="social-icons">Media oial kami:</h4><br>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

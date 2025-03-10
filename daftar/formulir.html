@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Mencegah pengiriman form secara default
+
+            // Mengambil nilai input dari form
+            const nama = document.getElementById("nama").value;
+            const nisn = document.getElementById("nisn").value;
+            const ttl = document.getElementById("ttl").value;
+            const ortu = document.getElementById("ortu").value;
+            const kelas = document.getElementById("kelas").value;
+
+            // Membentuk URL dengan query string berdasarkan input pengguna
+            const url = `konfirmasi.html?nama=${encodeURIComponent(nama)}&nisn=${encodeURIComponent(nisn)}&ttl=${encodeURIComponent(ttl)}&ortu=${encodeURIComponent(ortu)}&kelas=${encodeURIComponent(kelas)}`;
+
+            // Mengarahkan pengguna ke halaman konfirmasi dengan data yang telah diisi
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Kontainer utama untuk form pendaftaran -->
+    <div class="container">
+        <h1>Formulir Pendaftaran</h1>
+
+        <!-- Formulir pendaftaran dengan event handler untuk menangani submit -->
+        <form onsubmit="submitForm(event)">
+            
+            <!-- Input untuk Nama Lengkap -->
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <!-- Input untuk NISN -->
+            <label for="nisn">NISN:</label>
+            <input type="text" id="nisn" name="nisn" required>
+
+            <!-- Input untuk Tempat & Tanggal Lahir -->
+            <label for="ttl">Tempat & Tanggal Lahir:</label>
+            <input type="text" id="ttl" name="ttl" required>
+
+            <!-- Input untuk Nama Orang Tua/Wali -->
+            <label for="ortu">Nama Orang Tua/Wali:</label>
+            <input type="text" id="ortu" name="ortu" required>
+
+            <!-- Pilihan kelas dengan opsi dropdown -->
+            <label for="kelas">Pilihan Kelas:</label>
+            <select id="kelas" name="kelas">
+                <option value="1">Kelas 1</option>
+                <option value="2">Kelas 2</option>
+                <option value="3">Kelas 3</option>
+                <option value="4">Kelas 4</option>
+                <option value="5">Kelas 5</option>
+                <option value="6">Kelas 6</option>
+            </select>
+
+            <!-- Tombol submit untuk melanjutkan pendaftaran -->
+            <button type="submit">Lanjutkan</button>
+        </form>
+    </div>
+
+</body>
+</html>
